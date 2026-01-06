@@ -95,12 +95,12 @@ fn main() {
 
     original_chudnovsky(digits_of_precision, bits_of_precision, maxk);
 
-    dbg!(starttime.elapsed());
+    println!("base algorithm ran in {:#?}", starttime.elapsed());
 
 
     let optimizedstarttime = Instant::now();
 
     optimized_chudnovsky(bits_of_precision, digits_of_precision);
 
-    dbg!(optimizedstarttime.elapsed());
+    println!("Optimized algorithm ran in {:#?}", optimizedstarttime.elapsed());
 }
